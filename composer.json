@@ -1,0 +1,21 @@
+{
+    "name": "comradepashka/yii2-seo-storable",
+    "description": "SEO storable behavior for old urls and redirections",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","SEO"],
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Pavel Sokolov",
+            "email": "comradepashka@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "^2.0",
+    },
+    "autoload": {
+        "psr-4": {
+            "comradepashka\\seostorable\\": ""
+        }
+    }
+}
