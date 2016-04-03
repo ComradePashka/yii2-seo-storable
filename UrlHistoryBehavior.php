@@ -13,8 +13,8 @@ use yii\base\Behavior;
 use yii\db\ActiveRecord;
 
 /**
- * Class SeoStorableBehaviour
- * @package comradepashka\seostorable
+ * Class UrlHistoryBehavior
+ * @package comradepashka\seokit
  *
  */
 class UrlHistoryBehavior extends Behavior
