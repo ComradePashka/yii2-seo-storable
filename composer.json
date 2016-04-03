@@ -2,7 +2,7 @@
     "name": "comradepashka/yii2-seokit",
     "description": "Set of tools that helps to construct SEO-friendly site",
     "type": "yii2-extension",
-    "keywords": ["yii2","extension","SEO"],
+    "keywords": ["yii2","extension","SEO", "url history"],
     "license": "Apache-2.0",
     "authors": [
         {
