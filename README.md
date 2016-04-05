@@ -8,6 +8,11 @@ URL for later use, e.g. redirection to actual URL fo model.
 2do list
  - have to find way how to handle complex model Primary Key when create
  dynamic relation
+ 
+Changes
+-------
+Fix changes with empty url
+
 
 Installation
 ------------
