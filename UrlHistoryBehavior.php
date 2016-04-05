@@ -45,6 +45,7 @@ class UrlHistoryBehavior extends Behavior
 
     public function afterUpdate($event)
     {
+        if (!isset($event->changedAttributes{$this->url_attribute})) return;
         $oldurl = $event->changedAttributes{$this->url_attribute};
         $newurl = $this->owner->{$this->url_attribute};
         if ($newurl != $oldurl) {
