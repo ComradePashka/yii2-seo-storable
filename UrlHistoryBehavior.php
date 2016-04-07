@@ -43,6 +43,17 @@ class UrlHistoryBehavior extends Behavior
         }
     }
 
+    public function merge($id)
+    {
+        $newEntity = yii::createObject($this->owner->className())->findOne($id);
+        $url = new UrlHistory();
+        $url->entity_name = $this->owner->className();
+        $url->entity_pk = json_encode($newEntity->primaryKey);
+        $url->old_url = $this->owner->attributes{$this->url_attribute};
+        $url->save();
+        $this->owner->delete();
+    }
+
     public function afterUpdate($event)
     {
         if (!isset($event->changedAttributes{$this->url_attribute})) return;
